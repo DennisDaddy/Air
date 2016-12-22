@@ -7,7 +7,17 @@ Rails.application.routes.draw do
   get 'about' => 'static_pages#about'
 
   get 'contact' => 'static_pages#contact'
+
   get 'donate' => 'static_pages#donate'
+
+  get 'involved' => 'static_pages#involved'
+
+  get 'careers' => 'static_pages#careers'
+
+  get 'blog' => 'static_pages#blog'
+
+  get 'jobs' => 'static_pages#jobs'
+
 
   get 'signup'   => 'users#new'
 
