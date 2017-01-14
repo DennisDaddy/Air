@@ -9,6 +9,9 @@ gem 'mini_magick'
 gem "font-awesome-rails"
 
 
+gem 'prettyphoto-rails'
+
+
 gem 'will_paginate'
 gem 'bootstrap-will_paginate'
 
