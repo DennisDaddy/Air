@@ -1,0 +1,17 @@
+
+<h3><%= link_to job.title, job %></h3>
+
+<span class="timestamp">
+<i><b>Posted <%= time_ago_in_words(job.created_at) %> ago.</b></i>
+
+<% if current_user?(job.user) %>
+<%= link_to "Delete", job, method: :delete,
+data: { confirm: "You sure?" } %>
+|  <%= link_to "Edit",edit_job_path(job) %>
+<% end %>
+</span>
+<br>
+<span class="content">
+	<%= truncate(job.content, length: 100, separator: ''){ link_to 'Read More', job_path(job) } %>
+</span>
+<hr>

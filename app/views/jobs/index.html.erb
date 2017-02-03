@@ -1,0 +1,15 @@
+<div>
+
+<% if logged_in? %>
+<h4><%= link_to  "Add Job", new_job_path %></h4>
+<% end %>
+
+<%= will_paginate %>
+
+
+<%= render @jobs %>
+
+<%= will_paginate %>
+
+</div>
+

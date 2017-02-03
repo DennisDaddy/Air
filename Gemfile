@@ -6,10 +6,6 @@ gem 'faker'
 gem 'fog'
 gem 'carrierwave'
 gem 'mini_magick'
-gem "font-awesome-rails"
-
-
-gem 'prettyphoto-rails'
 
 
 gem 'will_paginate'
