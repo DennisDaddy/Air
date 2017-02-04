@@ -3,9 +3,9 @@ Rails.application.routes.draw do
 
   root 'static_pages#home'
 
-  get 'donate' to: 'static_pages#donate'
-  get 'involved'to: 'static_pages#involved'
-  get 'careers' to: 'static_pages#careers'
+  get '/donate',    to: 'static_pages#donate'
+  get '/involved',  to: 'static_pages#involved'
+  get '/careers',   to: 'static_pages#careers'
   get  '/help',    to: 'static_pages#help'
   get  '/about',   to: 'static_pages#about'
   get  '/contact', to: 'static_pages#contact'
