@@ -1,5 +1,5 @@
 
-<section id="blog" class="container">
+<section id="registration" class="container">
 <%= form_for(@micropost) do |f| %>
 
 		<%= render 'shared/error_messages', object: f.object %>
@@ -10,8 +10,9 @@
 
 		<%= f.text_area :content, placeholder: "Compose new micropost...", class: 'form-control' %>
 		</div>
-		<%= f.submit "Post", class: "btn btn-primary" %>
+		<%= f.submit "Add Post", class: "btn btn-primary" %>
 
 <% end %>
 </section>
+<br><br><br><br><br><br><br><br><br><br>
 
