@@ -22,7 +22,7 @@ class MicropostsController < ApplicationController
 	flash[:success] = "Micropost created!"
 	redirect_to microposts_url
 	else
-		flash[:alert] = "Micropost not created!"
+		flash[:danger] = "Micropost not created fill all fields!"
 	  redirect_to request.referrer || root_url
 	end
 end
