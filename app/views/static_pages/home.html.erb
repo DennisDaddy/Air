@@ -219,63 +219,20 @@
      <section id="bottom" class="wet-asphalt">
         <div class="container">
             <div class="row">
-                <div class="col-md-3 col-sm-6">
+                <div class="col-md-4 col-sm-6">
                     <h4>About Us</h4>
                     <p>Family AIDS Initiative Response is a local NGO in Kenya addresses the challenges faced by children who have either been orphaned by AIDS or live with parents who are affected from AIDS-related illnesses.We are involved in implementing the Preventing Orphaning Initiative (TPOI) a programme funded by Family Health International and AphiaPlus.</p>
                     
-                </div><!--/.col-md-3-->
+                </div><!--/.col-md-4-->
 
-                <div class="col-md-3 col-sm-6">
-                    <h4>Our Company</h4>
-                    <div>
-                        <ul class="arrow">
-                            <li><a href="about-us.php">About Us</a></li>
-                            <li><a href="donate.php">Donate</a></li>
-                            <li><a href="involved.php">Get Involved</a></li>
-                            <li><a href="career.php">Careers</a></li>
-                            <li><a href="jobs.php">Jobs</a></li>
-                            <li><a href="blog.php">Blog</a></li>
-                            <li><a href="contact-us.php">Contact Us</a></li>
-                           
-                        </ul>
-                    </div>
-                </div><!--/.col-md-3-->
+                <div class="col-md-4 col-sm-6">
+                    <h4>Our Mission</h4>
+                    <p>Family AIDS Initiative Response is a local NGO in Kenya addresses the challenges faced by children who have either been orphaned by AIDS or live with parents who are affected from AIDS-related illnesses.We are involved in implementing the Preventing Orphaning Initiative (TPOI) a programme funded by Family Health International and AphiaPlus.</p>
+                </div><!--/.col-md-4-->
 
-                <div class="col-md-3 col-sm-6">
-                    <h4>Latest Blog</h4>
-                    <div>
-                        <div class="media">
-                            <div class="pull-left">
-                                
-                                
-                            </div>
-                            <div class="media-body">
+                
 
-                                <?php
-                include("includes/connect.php");
-            
-                $query = "select * from posts order by 1 DESC LIMIT 0,3";
-            
-                $run =mysqli_query($con,$query);
-            
-            while ($row=mysqli_fetch_array($run)) {
-            
-                $post_id =$row['post_id'];
-                $title =$row['post_title'];
-                $post_date = $row['post_date'];               
-                ?>
-
-                <a href="blogpages.php?id=<?php echo $post_id; ?>">
-                 <p><?php echo $title; ?></p></a>                            
-                                       
-                                <p class="post-date"><b><?php echo $post_date; ?></b></p>
-                                 <?php } ?>
-                            </div>
-                        </div>
-                    </div>  
-                </div><!--/.col-md-3-->
-
-                <div class="col-md-3 col-sm-6">
+                <div class="col-md-4 col-sm-6">
 
                      <h4>ADDRESS</h4>
                      <address>
@@ -297,7 +254,7 @@
                 </ul>
                 </address>
 
-                </div> <!--/.col-md-3-->
+                </div> <!--/.col-md-4-->
             </div>
         </div>
     </section><!--/#bottom-->
