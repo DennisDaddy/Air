@@ -1,5 +1,5 @@
 
-
+<section id="blog" class="container">
 <%= form_for(@micropost) do |f| %>
 
 		<%= render 'shared/error_messages', object: f.object %>
@@ -13,3 +13,5 @@
 		<%= f.submit "Post", class: "btn btn-primary" %>
 
 <% end %>
+</section>
+
