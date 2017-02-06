@@ -12,6 +12,6 @@ data: { confirm: "You sure?" } %>
 <% end %>
 
 <br>
-	<%= truncate(micropost.content, length: 100, separator: ''){ link_to 'Read More', micropost_path(micropost) } %>
+	<p><%= truncate(micropost.content, length: 100, separator: ''){ link_to 'Read More', micropost_path(micropost) } %></p>
 
 <hr>
