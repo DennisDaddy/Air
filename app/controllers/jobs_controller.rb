@@ -21,7 +21,7 @@ class JobsController < ApplicationController
 	flash[:success] = "Job successfully created!"
 	redirect_to jobs_url
 	else
-		flash[:alert] = "Job not created!"
+		flash[:danger] = "Job not created fill all fields!"
 	  redirect_to request.referrer || root_url
 	end
 end
