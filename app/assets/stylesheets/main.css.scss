@@ -27,10 +27,10 @@
   box-sizing: border-box;
 }
 body {
-  padding-top: 50px;
-  
-  
+  padding-top: 50px;  
   font-family: 'Roboto', sans-serif;
+    background-color: white;
+
 }
 h1,
 h2,
@@ -42,7 +42,7 @@ h6 {
   font-weight: 400;
 }
 a {
-  color: blue;
+  color:#34495e;
   -webkit-transition: 300ms;
   -moz-transition: 300ms;
   -o-transition: 300ms;
