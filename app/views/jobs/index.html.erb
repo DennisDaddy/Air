@@ -1,8 +1,11 @@
 <% provide(:title, "All Jobs") %>
 <section id="terms" class="container">
 	<% if logged_in? %>
-	<h4><%= link_to  "Add Job", new_job_path %></h4>
+	
+	<p><%= link_to "Add New Job", new_job_path, class: "btn btn-primary" %></p>
+	<hr>
 	<% end %>
+
 
 	<%= will_paginate %>
 
