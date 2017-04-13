@@ -1,18 +1,35 @@
 <% provide(:title, "Add Blog") %>
+
 <section id="registration" class="container">
-<%= form_for(@micropost) do |f| %>
 
-		<%= render 'shared/error_messages', object: f.object %>
-		<div class="field">
+          <div class="col-md-6 col-md-offset-3 col-sm-8 col-sm-offset-2">
+            <div class="panel panel-default">
+              <div class="panel-body">
+                  <h3 class="thin text-center">Add New Post</h3>
+                  
+                  <hr>
+					<%= form_for(@micropost) do |f| %>
+					  <%= render 'shared/error_messages', object: f.object %>
+					   <div class="top-margin">
+					        <%= f.label :title %><span class="text-danger">*</span>
+					        <%= f.text_field :title, class: 'form-control' %>       
+					    </div>
 
-		<%= f.label :title %>
-   	    <%= f.text_field :title, class: 'form-control' %>
+					    <div class="top-margin">
+					     <%= f.label :content %><span class="text-danger">*</span>
+					     <%= f.text_area :content, placeholder: "Compose new Post..", class: 'form-control' %>
+					    </div>
 
-		<%= f.text_area :content, placeholder: "Compose new micropost...", class: 'form-control' %>
-		</div>
-		<%= f.submit "Add Post", class: "btn btn-primary" %>
+					    <div class="row">        
+					                 
+					      <%= f.submit "Create Post", class: "btn btn-success" %>
+					        
+					    </div>
+					<% end %>
 
-<% end %>
-</section>
-<br><br><br><br><br><br><br><br><br><br>
+                </div>
+               </div>
+            </div>
+
+</section><!--/#registration-->
 
