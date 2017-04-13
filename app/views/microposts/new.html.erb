@@ -8,7 +8,8 @@
                   <h3 class="thin text-center">Add New Post</h3>
                   
                   <hr>
-					<%= form_for(@micropost) do |f| %>
+					
+					<%= form_for(@micropost, html: { multipart: true }) do |f| %>
 					  <%= render 'shared/error_messages', object: f.object %>
 					   <div class="top-margin">
 					        <%= f.label :title %><span class="text-danger">*</span>
@@ -18,6 +19,10 @@
 					    <div class="top-margin">
 					     <%= f.label :content %><span class="text-danger">*</span>
 					     <%= f.text_area :content, placeholder: "Compose new Post..", class: 'form-control' %>
+					    </div>
+					    <div class="top-margin">
+					    <label>Picture(Optional)</label>
+					     <%= f.file_field :picture %>
 					    </div>
 
 					    <div class="row">        
