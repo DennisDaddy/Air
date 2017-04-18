@@ -65,7 +65,7 @@ group :test do
 group :production do
 gem 'pg'
 gem 'puma', '~> 3.0'
-
+gem 'rails_12factor'
 
 end
 
