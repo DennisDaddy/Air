@@ -40,13 +40,15 @@
                     </li>
                      <br>
                     <li>
-                        <i class="icon-envelope"></i>
+                        <i class="fa fa-envelope-o" aria-hidden="true"></i>
+
                         <strong>Email: </strong> info@fair-ke.org
                     </li>
                      <br>
                     <li>
-                        <i class="icon-phone"></i>
-                        <strong>Phone:</strong> (+254) 722894206 
+
+                    <i class="fa fa-phone-square" aria-hidden="true"></i>    
+                    <strong> Phone:</strong> (+254) 722894206 
                     </li>
                 </ul>
                 </address>
@@ -63,7 +65,7 @@
                 <div class="col-sm-6">
                     &copy; 2017 FAIR  All Rights Reserved 
                      <% if !logged_in? %>
-                    | <%= link_to "Admin Login", login_path %>
+                    | <%= link_to "Admin Login", login_path, class: "fa fa-lock" %>
                      <% end %>
                 </div>
                 <div class="col-sm-6">
@@ -71,7 +73,8 @@
                         <li><%= link_to "Home", root_path %></li>
                         <li><%= link_to "About Us", about_path %></li>
                         <li><%= link_to "Contact Us", contact_path %></li>
-                        <li><a id="gototop" class="gototop" href="#"><i class="icon-chevron-up"></i></a></li><!--#gototop-->
+                        <li><a id="gototop" class="gototop" href="#"><i class="fa fa-chevron-up" aria-hidden="true"></i>
+</a></li><!--#gototop-->
                     </ul>
                 </div>
             </div>
